@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+.delius-regular {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: bolder;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+:root {
+    --verde: #5f7132;
+    --gris: #6a6b66;
+    --azul: #5574b0;
+    --amarillo: #f6e638;
+    --rojo: #ba272c;
+    --marron: #800000
+}
+
+/* Colores
+verde: #5f7132;
+gris: #6a6b66;
+azul: #5574b0;
+amarillo: #f6e638;
+rojo: #ba272c;
+
+SCSS RGB
+--costa-del sol: rgba(95,113,50,255,1);
+--storm-dust: rgba(106,107,102,255,1);
+--san-marino: rgba(85,116,176,255,1);
+--starship: rgba(246,230,56,255,1);
+--tall-poppy: rgba(186,39,44,255,1); */
+
+/*-------------Ver mas-------------------------------*/
+article section div.mas a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    margin: 5%;
+}
+
+article section .mas a img {
+    width: 10%;
+    transition: transform 0.4s;
+    clear: both;
+}
+
+article section .mas a img:hover {
+    transform: scale(1.3) rotate(0.01deg);
+    cursor: pointer;
+}
+
+article section .mas a h3 {
+    color: black;
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+article section .mas a h3:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*-----------------------------------------------Header---------------------------------------*/
+header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: start;
+    background-image: url('../img/back03.webp');
+    background-size: cover;
+    background-position-y: 30%;
+}
+
+/*-------------Logo-------------------------------*/
+header div {
+    /* background-color: aliceblue; */
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    padding-left: 5%;
+}
+
+header div a {
+    display: flex;
+    align-items: center;
+}
+
+header div a:nth-child(1) {
+    width: 20%;
+}
+
+header div a:nth-child(2) h1 {
+    color: var(--marron);
+}
+
+/*-------------Menu-------------------------------*/
+.menu {
+    width: 100%;
+    background-color: var(--azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu a {
+    transition: 3s ease-in-out;
+    width: 15%;
+}
+
+.menu a p {
+    padding: 5% 20% 5% 20%;
+    text-align: center;
+    color: var(--amarillo);
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    transition: 0.4s ease-in-out;
+}
+
+.menu a :hover {
+    transition: 1s;
+    color: var(--azul);
+    background-color: var(--amarillo);
+}
+
+/*-------------------Flecha Arriba----------*/
+
+
+div.arriba {
+    width: 5vw;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    animation-name: arriba;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arriba {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+/*------------------------------------Footer-------------------------------*/
+footer {
+    clear: both;
+    background-color: cadetblue;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer img {
+    width: 40%;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div a p {
+    padding: 5%;
+    color: black;
+    transition: 4s ease-in-out;
+}
+
+footer div a p:hover {
+    transition: 4s;
+    text-decoration: underline;
+}
