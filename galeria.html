@@ -7,6 +7,7 @@
     <title>Bojack Horseman - Galeria</title>
     <link rel="stylesheet" href="./style/estilo.css">
     <link rel="stylesheet" href="./style/estilo_galeria.css">
+    <link rel="stylesheet" href="./dist/css/lightbox.min.css">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 </head>
 
@@ -31,145 +32,354 @@
         <a href="./reparto.html">
             <p>Reparto</p>
         </a>
-        <a href="#">
+        <a href="./personajes.html">
             <p>Personajes</p>
         </a>
-        <a href="#">
+        <a href="./curio.html">
             <p>Curiosidades</p>
         </a>
-        <a href="#">
+        <a href="./temp.html">
             <p>Temporadas</p>
         </a>
-        <a href="#">
+        <a href="./contanos.html">
             <p>Contanos</p>
         </a>
     </nav>
     <article>
         <h2>Ve las mejores imágenes de tus personajes favoritos</h2>
-        <section>
-            <a href="#"><img src="./img/bojack_temp_1.jpg" alt="Imagen de Bojack"></a>
-            <a href="#"><img src="./img/gal_diane.webp" alt="Imagen de Diane"></a>
-            <a href="#"><img src="./img/gal_mr.jpg" alt="Imagen de Mr. Peanetbutter"></a>
-            <a href="#"><img src="./img/gal_princess.avif" alt="Imagen de Princess Carolyne"></a>
-            <a href="#"><img src="./img/gal_todd.jpeg" alt="Imagen de Todd Chavez"></a>
-            <a href="#"><img src="./img/gal_otros.jpg" alt="Imagen de personajes varios"></a>
+        <section class="sel">
+            <a id="btnBojack"><img src="./img/bojack_temp_1.jpg" alt="Imagen de Bojack"></a>
+            <a id="btnDiane"><img src="./img/gal_diane.webp" alt="Imagen de Diane"></a>
+            <a id="btnMr"><img src="./img/gal_mr.jpg" alt="Imagen de Mr. Peanetbutter"></a>
+            <a id="btnPc"><img src="./img/gal_princess.avif" alt="Imagen de Princess Carolyne"></a>
+            <a id="btnTodd"><img src="./img/gal_todd.jpeg" alt="Imagen de Todd Chavez"></a>
+            <a id="btnOtro"><img src="./img/gal_otros.jpg" alt="Imagen de personajes varios"></a>
         </section>
-        <section>
+        <section id="bojack_img" class="cont_img">
             <h3>Bojack Horseman</h3>
-            <img src="./img/001.jpeg" alt="Bojack y su mamá">
-            <img src="./img/003.webp" alt="Bojack niño y su mamá">
-            <img src="./img/003.webp" alt="Bojack niño y sus padres">
-            <img src="./img/./007.jpg" alt="Bojack y Princess Carolyne">
-            <img src="img/016.webp" alt="Bojack y Princess Carolyne">
-            <img src="img/018.webp" alt="Bojack y Diane">
-            <img src="./img/020.webp" alt="Bojack y Diane">
-            <img src="./img/021.jpg" alt="Bojack y Diane">
-            <img src="./img/024.webp" alt="Bojack y Diane">
-            <img src="./img/029.jpg" alt="Bojack y Todd">
-            <img src="./img/030.jpg" alt="Bojack en fondo del Oceano">
-            <img src="img/036.jpg" alt="Bojack y Todd">
-            <img src="img/037.jpg" alt="Bojack y Secretariat">
-            <img src="img/038.jpg" alt="Bojack y su reflejo">
-            <img src="./img/043.jpg" alt="Bojack y Mr. Peanetbutter">
-            <img src="./img/045.jpg" alt="Bojack y Mr. Peanetbutter">
-            <img src="./img/bojack_temp_6.jpg" alt="Bojack envejecido">
+
+            <a class="example-image-link" href="./img/001.jpeg" data-lightbox="example-set"
+                data-title="Bojack y su mamá">
+                <img class="example-image" src="./img/001.jpeg" alt="Bojack y su mamá">
+            </a>
+            <a class="example-image-link" href="./img/003.webp" data-title="Bojack niño y su mamá"
+                data-lightbox="example-set">
+                <img src="./img/003.webp" alt="Bojack niño y su mamá">
+            </a>
+            <a class="example-image-link" href="./img/007.jpg" data-title="Bojack y Princess Carolyne"
+                data-lightbox="example-set">
+                <img src="./img/007.jpg" alt="Bojack y Princess Carolyne">
+            </a>
+            <a class="example-image-link" href="./img/016.webp" data-title="Bojack y Princess Carolyne"
+                data-lightbox="example-set">
+                <img src="img/016.webp" alt="Bojack y Princess Carolyne">
+            </a>
+            <a class="example-image-link" href="./img/018.webp" data-title="Bojack y Diane" data-lightbox="example-set">
+                <img src="img/018.webp" alt="Bojack y Diane">
+            </a>
+            <a class="example-image-link" href="./img/020.webp" data-title="Bojack y Diane" data-lightbox="example-set">
+                <img src="./img/020.webp" alt="Bojack y Diane">
+            </a>
+            <a class="example-image-link" href="./img/021.jpg" data-title="Bojack y Diane" data-lightbox="example-set">
+                <img src="./img/021.jpg" alt="Bojack y Diane">
+            </a>
+            <a class="example-image-link" href="./img/024.webp" data-title="Bojack y Diane" data-lightbox="example-set">
+                <img src="./img/024.webp" alt="Bojack y Diane">
+            </a>
+            <a class="example-image-link" href="./img/029.jpg" data-title="Bojack y Todd" data-lightbox="example-set">
+                <img src="./img/029.jpg" alt="Bojack y Todd">
+            </a>
+            <a class="example-image-link" href="./img/030.jpg" data-title="Bojack en fondo del Oceano"
+                data-lightbox="example-set">
+                <img src="./img/030.jpg" alt="Bojack en fondo del Oceano">
+            </a>
+            <a class="example-image-link" href="./img/036.jpg" data-title="Bojack y Todd" data-lightbox="example-set">
+                <img src="img/036.jpg" alt="Bojack y Todd">
+            </a>
+            <a class="example-image-link" href="./img/037.jpg" data-title="Bojack y Secretariat"
+                data-lightbox="example-set">
+                <img src="img/037.jpg" alt="Bojack y Secretariat">
+            </a>
+            <a class="example-image-link" href="./img/038.jpg" data-title="Bojack y su reflejo"
+                data-lightbox="example-set">
+                <img src="img/038.jpg" alt="Bojack y su reflejo">
+            </a>
+            <a class="example-image-link" href="./img/043.jpg" data-title="Bojack y Mr. Peanetbutter"
+                data-lightbox="example-set">
+                <img src="./img/043.jpg" alt="Bojack y Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/045.jpg" data-title="Bojack y Mr. Peanetbutter"
+                data-lightbox="example-set">
+                <img src="./img/045.jpg" alt="Bojack y Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/bojack_temp_6.jpg" data-title="Bojack envejecido"
+                data-lightbox="example-set">
+                <img src="./img/bojack_temp_6.jpg" alt="Bojack envejecido">
+            </a>
         </section>
-        <section>
+        <section id="diane_img" class="cont_img">
             <h3>Diane Nguyen</h3>
-            <img src="img/017.jpg" alt="Diane">
-            <img src="img/018.webp" alt="Diane y Bojack">
-            <img src="img/019.avif" alt="Diane">
-            <img src="img/020.webp" alt="Diane y Bojack">
-            <img src="img/021.jpg" alt="Diane y Bojack">
-            <img src="img/022.webp" alt="Diane">
-            <img src="img/023.webp" alt="Diane y Mr. Peanetbutter">
-            <img src="img/024.webp" alt="Diane y Bojack">
-            <img src="img/025.png" alt="Diane">
-            <img src="img/033.jpg" alt="Diane y Mr. Peanetbutter">
-            <img src="img/035.jpg" alt="Diane con Todd y Princess Carolyne">
-            <img src="img/041.avif" alt="Diane y Mr. Peanetbutter">
-            <img src="img/044.jpg" alt="Diane y Mr. Peanetbutter">
-            <img src="img/046.jpg" alt="Diane y Mr. Peanetbutter">
-            <img src="img/050.jpeg" alt="Diane y Mr. Peanetbutter">
+            <a class="example-image-link" href="./img/017.jpg" data-title="Diane" data-lightbox="diane">
+                <img src="img/017.jpg" alt="Diane">
+            </a>
+            <a class="example-image-link" href="./img/018.webp" data-title="Diane y Bojack" data-lightbox="diane">
+                <img src="img/018.webp" alt="Diane y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/019.avif" data-title="Diane" data-lightbox="diane">
+                <img src="img/019.avif" alt="Diane">
+            </a>
+            <a class="example-image-link" href="./img/020.webp" data-title="Diane y Bojack" data-lightbox="diane">
+                <img src="img/020.webp" alt="Diane y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/021.jpg" data-title="Diane y Bojack" data-lightbox="diane">
+                <img src="img/021.jpg" alt="Diane y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/022.webp" data-title="Diane" data-lightbox="diane">
+                <img src="img/022.webp" alt="Diane">
+            </a>
+            <a class="example-image-link" href="./img/023.webp" data-title="Diane y Mr. Peanetbutter"
+                data-lightbox="diane">
+                <img src="img/023.webp" alt="Diane y Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/024.webp" data-title="Diane y Bojack" data-lightbox="diane">
+                <img src="img/024.webp" alt="Diane y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/025.png" data-title="Diane" data-lightbox="diane">
+                <img src="img/025.png" alt="Diane">
+            </a>
+            <a class="example-image-link" href="./img/033.jpg" data-title="Diane y Mr. Peanetbutter"
+                data-lightbox="diane">
+                <img src="img/033.jpg" alt="Diane y Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/035.jpg" data-title="Diane con Todd y Princess Carolyne"
+                data-lightbox="diane">
+                <img src="img/035.jpg" alt="Diane con Todd y Princess Carolyne">
+            </a>
+            <a class="example-image-link" href="./img/041.avif" data-title="Diane y Mr. Peanetbutter"
+                data-lightbox="diane">
+                <img src="img/041.avif" alt="Diane y Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/044.jpg" data-title="Diane y Mr. Peanetbutter"
+                data-lightbox="diane">
+                <img src="img/044.jpg" alt="Diane y Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/046.jpg" data-title="Diane y Mr. Peanetbutter"
+                data-lightbox="diane">
+                <img src="img/046.jpg" alt="Diane y Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/050.jpeg" data-title="Diane y Mr. Peanetbutter"
+                data-lightbox="diane">
+                <img src="img/050.jpeg" alt="Diane y Mr. Peanetbutter">
+            </a>
         </section>
-        <section>
+        <section id="mr_img" class="cont_img">
             <h3>Mr. Peanetbutter</h3>
-            <img src="img/014.jpg" alt="Mr. Peanetbutter y Princess Carolyne">
-            <img src="img/015.jpg" alt="Mr. Peanetbutter">
-            <img src="img/023.webp" alt="Mr. Peanetbutter y Diane">
-            <img src="img/033.jpg" alt="Mr. Peanetbutter y Diane">
-            <img src="img/032.jpeg" alt="Mr. Peanetbutter y Todd">
-            <img src="img/040.webp" alt="Mr. Peanetbutter">
-            <img src="img/041.avif" alt="Mr. Peanetbutter y Diane">
-            <img src="img/042.jpg" alt="Mr. Peanetbutter">
-            <img src="img/043.jpg" alt="Mr. Peanetbutter y Bojack">
-            <img src="img/044.jpg" alt="Mr. Peanetbutter y Diane">
-            <img src="img/045.jpg" alt="Mr. Peanetbutter y Bojack">
-            <img src="img/046.jpg" alt="Mr. Peanetbutter y Diane">
-            <img src="img/047.jpg" alt="Mr. Peanetbutter">
-            <img src="img/048.avif" alt="Mr. Peanetbutter">
-            <img src="img/049.jpg" alt="Mr. Peanetbutter">
-            <img src="img/050.jpeg" alt="Mr. Peanetbutter y Diane">
+            <a class="example-image-link" href="./img/014.jpg" data-title="Mr. Peanetbutter y Princess Carolyne"
+                data-lightbox="mr">
+                <img src="img/014.jpg" alt="Mr. Peanetbutter y Princess Carolyne">
+            </a>
+            <a class="example-image-link" href="./img/015.jpg" data-title="Mr. Peanetbutter" data-lightbox="mr">
+                <img src="img/015.jpg" alt="Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/023.webp" data-title="Mr. Peanetbutter y Diane"
+                data-lightbox="mr">
+                <img src="img/023.webp" alt="Mr. Peanetbutter y Diane">
+            </a>
+            <a class="example-image-link" href="./img/033.jpg" data-title="Mr. Peanetbutter y Diane" data-lightbox="mr">
+                <img src="img/033.jpg" alt="Mr. Peanetbutter y Diane">
+            </a>
+            <a class="example-image-link" href="./img/032.jpeg" data-title="Mr. Peanetbutter y Todd" data-lightbox="mr">
+                <img src="img/032.jpeg" alt="Mr. Peanetbutter y Todd">
+            </a>
+            <a class="example-image-link" href="./img/040.webp" data-title="Mr. Peanetbutter" data-lightbox="mr">
+                <img src="img/040.webp" alt="Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/041.avif" data-title="Mr. Peanetbutter y Diane"
+                data-lightbox="mr">
+                <img src="img/041.avif" alt="Mr. Peanetbutter y Diane">
+            </a>
+            <a class="example-image-link" href="./img/042.jpg" data-title="Mr. Peanetbutter" data-lightbox="mr">
+                <img src="img/042.jpg" alt="Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/043.jpg" data-title="Mr. Peanetbutter y Bojack"
+                data-lightbox="mr">
+                <img src="img/043.jpg" alt="Mr. Peanetbutter y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/044.jpg" data-title="Mr. Peanetbutter y Diane" data-lightbox="mr">
+                <img src="img/044.jpg" alt="Mr. Peanetbutter y Diane">
+            </a>
+            <a class="example-image-link" href="./img/045.jpg" data-title="Mr. Peanetbutter y Bojack"
+                data-lightbox="mr">
+                <img src="img/045.jpg" alt="Mr. Peanetbutter y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/046.jpg" data-title="Mr. Peanetbutter y Diane" data-lightbox="mr">
+                <img src="img/046.jpg" alt="Mr. Peanetbutter y Diane">
+            </a>
+            <a class="example-image-link" href="./img/047.jpg" data-title="Mr. Peanetbutter" data-lightbox="mr">
+                <img src="img/047.jpg" alt="Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/048.avif" data-title="Mr. Peanetbutter" data-lightbox="mr">
+                <img src="img/048.avif" alt="Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/049.jpg" data-title="Mr. Peanetbutter" data-lightbox="mr">
+                <img src="img/049.jpg" alt="Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/050.jpeg" data-title="Mr. Peanetbutter y Diane"
+                data-lightbox="mr">
+                <img src="img/050.jpeg" alt="Mr. Peanetbutter y Diane">
+            </a>
         </section>
-        <section>
+        <section id="pc_img" class="cont_img">
             <h3>Princess Carolyne</h3>
-            <img src="img/010.jpg" alt="Princess Carolyne">
-            <img src="img/011.jpg" alt="Princess Carolyne">
-            <img src="img/012.png" alt="Princess Carolyne">
-            <img src="img/013.png" alt="Princess Carolyne y su mamá">
-            <img src="img/014.jpg" alt="Princess Carolyne y Mr. Peanetbutter">
-            <img src="img/016.webp" alt="Princess Carolyne y Bojack">
-            <img src="img/035.jpg" alt="Princess Carolyne con Diane y Todd">
+            <a class="example-image-link" href="./img/010.jpg" data-title="Princess Carolyne" data-lightbox="pc">
+                <img src="img/010.jpg" alt="Princess Carolyne">
+            </a>
+            <a class="example-image-link" href="./img/011.jpg" data-title="Princess Carolyne" data-lightbox="pc">
+                <img src="img/011.jpg" alt="Princess Carolyne">
+            </a>
+            <a class="example-image-link" href="./img/012.png" data-title="Princess Carolyne" data-lightbox="pc">
+                <img src="img/012.png" alt="Princess Carolyne">
+            </a>
+            <a class="example-image-link" href="./img/013.png" data-title="Princess Carolyne y su mamá"
+                data-lightbox="pc">
+                <img src="img/013.png" alt="Princess Carolyne y su mamá">
+            </a>
+            <a class="example-image-link" href="./img/014.jpg" data-title="Princess Carolyne y Mr. Peanetbutter"
+                data-lightbox="pc">
+                <img src="img/014.jpg" alt="Princess Carolyne y Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/016.webp" data-title="Princess Carolyne y Bojack"
+                data-lightbox="pc">
+                <img src="img/016.webp" alt="Princess Carolyne y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/035.jpg" data-title="Princess Carolyne con Diane y Todd"
+                data-lightbox="pc">
+                <img src="img/035.jpg" alt="Princess Carolyne con Diane y Todd">
+            </a>
         </section>
-        <section>
+        <section id="todd_img" class="cont_img">
             <h3>Todd Chavez</h3>
-            <img src="img/026.jpg" alt="Todd Chavez">
-            <img src="img/027.webp" alt="Todd Chavez">
-            <img src="img/028.avif" alt="Todd Chavez">
-            <img src="img/031.webp" alt="Todd Chavez">
-            <img src="img/032.jpeg" alt="Todd Chavez y Mr. Peanetbutter">
-            <img src="img/034.avif" alt="Todd Chavez">
-            <img src="img/035.jpg" alt="Todd Chavez con Diane y Princess Carolyne">
-            <img src="img/036.jpg" alt="Todd Chavez y Bojack">
-            <img src="img/029.jpg" alt="Todd y Bojack">
+            <a class="example-image-link" href="./img/026.jpg" data-title="Todd Chavez" data-lightbox="pc">
+                <img src="img/026.jpg" alt="Todd Chavez">
+            </a>
+            <a class="example-image-link" href="./img/027.webp" data-title="Todd Chavez" data-lightbox="pc">
+                <img src="img/027.webp" alt="Todd Chavez">
+            </a>
+            <a class="example-image-link" href="./img/028.avif" data-title="Todd Chavez" data-lightbox="pc">
+                <img src="img/028.avif" alt="Todd Chavez">
+            </a>
+            <a class="example-image-link" href="./img/031.webp" data-title="Todd Chavez" data-lightbox="pc">
+                <img src="img/031.webp" alt="Todd Chavez">
+            </a>
+            <a class="example-image-link" href="./img/032.jpeg" data-title="Todd Chavez y Mr. Peanetbutter"
+                data-lightbox="pc">
+                <img src="img/032.jpeg" alt="Todd Chavez y Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/034.avif" data-title="Todd Chavez" data-lightbox="pc">
+                <img src="img/034.avif" alt="Todd Chavez">
+            </a>
+            <a class="example-image-link" href="./img/035.jpg" data-title="Todd Chavez y Princess Carolyne"
+                data-lightbox="pc">
+                <img src="img/035.jpg" alt="Todd Chavez con Diane y Princess Carolyne">
+            </a>
+            <a class="example-image-link" href="./img/036.jpg" data-title="Todd Chavez y Bojack" data-lightbox="pc">
+                <img src="img/036.jpg" alt="Todd Chavez y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/029.jpg" data-title="Todd Chavez y Bojack" data-lightbox="pc">
+                <img src="img/029.jpg" alt="Todd y Bojack">
+            </a>
         </section>
-        <section class="apartado">
-            <p>
-                "Hay gente a la que no puedes salvar. Porque es seguro que esa gente va a patalear y arrastrara junto
-                con
-                ellos."
-            </p>
-            <div></div>
-        </section>
-        <section>
+        <section id="otro_img" class="cont_img">
             <h3>Otro</h3>
-            <img src="img/002.jpg" alt="Beatrice Horseman y su mamá">
-            <img src="img/005.webp" alt="Mamá y papá de Bojack">
-            <img src="img/006.webp" alt="Beatrice Horseman y su mamá">
-            <img src="img/008.jpg" alt="El barco de bojack">
-            <img src="img/otro_001.jpeg" alt="Sarah Lynn y Bojack">
-            <img src="img/otro_002.avif" alt="Sarah Lynn y Bojack">
-            <img src="img/otro_004.avif" alt="Sarah Lynn de niña">
-            <img src="img/otro_005.avif" alt="Sarah Lynn de niña y Bojack">
-            <img src="img/otro_006.avif" alt="Sarah Lynn">
-            <img src="img/otro_008.jpg" alt="Herb Kazzaz y Bojack">
-            <img src="img/otro_009.jpg" alt="Herb Kazzaz y Bojack">
-            <img src="img/otro_011.jpg" alt="Herb Kazzaz y Bojack">
-            <img src="img/otro_016.jpg" alt="Herb , Charlotte y Bojack">
+            <a class="example-image-link" href="./img/002.jpg" data-title="Beatrice Horseman y su mamá"
+                data-lightbox="pc">
+                <img src="img/002.jpg" alt="Beatrice Horseman y su mamá">
+            </a>
+            <a class="example-image-link" href="./img/005.webp" data-title="Mamá y papá de Bojack" data-lightbox="pc">
+                <img src="img/005.webp" alt="Mamá y papá de Bojack">
+            </a>
+            <a class="example-image-link" href="./img/006.webp" data-title="Beatrice Horseman y su mamá"
+                data-lightbox="pc">
+                <img src="img/006.webp" alt="Beatrice Horseman y su mamá">
+            </a>
+            <a class="example-image-link" href="./img/008.jpg" data-title="El barco de bojack" data-lightbox="pc">
+                <img src="img/008.jpg" alt="El barco de bojack">
+            </a>
+            <a class="example-image-link" href="./img/otro_001.jpeg" data-title="Sarah Lynn y Bojack"
+                data-lightbox="pc">
+                <img src="img/otro_001.jpeg" alt="Sarah Lynn y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/otro_002.avif" data-title="Sarah Lynn y Bojack"
+                data-lightbox="pc">
+                <img src="img/otro_002.avif" alt="Sarah Lynn y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/otro_004.avif" data-title="Sarah Lynn de niña" data-lightbox="pc">
+                <img src="img/otro_004.avif" alt="Sarah Lynn de niña">
+            </a>
+            <a class="example-image-link" href="./img/otro_005.avif" data-title="Sarah Lynn de niña y Bojack"
+                data-lightbox="pc">
+                <img src="img/otro_005.avif" alt="Sarah Lynn de niña y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/otro_006.avif" data-title="Sarah Lynn" data-lightbox="pc">
+                <img src="img/otro_006.avif" alt="Sarah Lynn">
+            </a>
+            <a class="example-image-link" href="./img/otro_008.jpg" data-title="Herb Kazzaz y Bojack"
+                data-lightbox="pc">
+                <img src="img/otro_008.jpg" alt="Herb Kazzaz y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/otro_009.jpg" data-title="Herb Kazzaz y Bojack"
+                data-lightbox="pc">
+                <img src="img/otro_009.jpg" alt="Herb Kazzaz y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/otro_011.jpg" data-title="Herb Kazzaz y Bojack"
+                data-lightbox="pc">
+                <img src="img/otro_011.jpg" alt="Herb Kazzaz y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/otro_016.jpg" data-title="Herb , Charlotte y Bojack"
+                data-lightbox="pc">
+                <img src="img/otro_016.jpg" alt="Herb , Charlotte y Bojack">
+            </a>
         </section>
-        <section>
+        <section id="todos_img" class="cont_img">
             <h3>Un poco de todos</h3>
-            <img src="img/otro_009.jpg" alt="Herb Kazzaz y Bojack">
-            <img src="img/035.jpg" alt="Todd Chavez con Diane y Princess Carolyne">
-            <img src="img/014.jpg" alt="Princess Carolyne y Mr. Peanetbutter">
-            <img src="img/022.webp" alt="Diane">
-            <img src="img/038.jpg" alt="Bojack y su reflejo">
-            <img src="img/otro_016.jpg" alt="Herb , Charlotte y Bojack">
-            <img src="img/011.jpg" alt="Princess Carolyne">
-            <img src="img/037.jpg" alt="Bojack y Secretariat">
-            <img src="img/002.jpg" alt="Beatrice Horseman y su mamá">
-            <img src="img/036.jpg" alt="Bojack y Todd">
-            <img src="./img/003.webp" alt="Bojack niño y su mamá">
+            <a class="example-image-link" href="./img/otro_009.jpg" data-title="Herb Kazzaz y Bojack"
+                data-lightbox="otro">
+                <img src="img/otro_009.jpg" alt="Herb Kazzaz y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/035.jpg" data-title="Todd Chavez con Diane y Princess Carolyne"
+                data-lightbox="otro">
+                <img src="img/035.jpg" alt="Todd Chavez con Diane y Princess Carolyne">
+            </a>
+            <a class="example-image-link" href="./img/014.jpg" data-title="Princess Carolyne y Mr. Peanetbutter"
+                data-lightbox="otro">
+                <img src="img/014.jpg" alt="Princess Carolyne y Mr. Peanetbutter">
+            </a>
+            <a class="example-image-link" href="./img/022.webp" data-title="Diane" data-lightbox="otro">
+                <img src="img/022.webp" alt="Diane">
+            </a>
+            <a class="example-image-link" href="./img/038.jpg" data-title="Bojack y su reflejo" data-lightbox="otro">
+                <img src="img/038.jpg" alt="Bojack y su reflejo">
+            </a>
+            <a class="example-image-link" href="./img/otro_016.jpg" data-title="Herb , Charlotte y Bojack"
+                data-lightbox="otro">
+                <img src="img/otro_016.jpg" alt="Herb , Charlotte y Bojack">
+            </a>
+            <a class="example-image-link" href="./img/011.jpg" data-title="Princess Carolyne" data-lightbox="otro">
+                <img src="img/011.jpg" alt="Princess Carolyne">
+            </a>
+            <a class="example-image-link" href="./img/037.jpg" data-title="Bojack y Secretariat" data-lightbox="otro">
+                <img src="img/037.jpg" alt="Bojack y Secretariat">
+            </a>
+            <a class="example-image-link" href="./img/002.jpg" data-title="Beatrice Horseman y su mamá"
+                data-lightbox="otro">
+                <img src="img/002.jpg" alt="Beatrice Horseman y su mamá">
+            </a>
+            <a class="example-image-link" href="./img/036.jpg" data-title="Bojack y Todd" data-lightbox="otro">
+                <img src="img/036.jpg" alt="Bojack y Todd">
+            </a>
+            <a class="example-image-link" href="./img/003.webp" data-title="Bojack niño y su mamá" data-lightbox="otro">
+                <img src="./img/003.webp" alt="Bojack niño y su mamá">
+            </a>
         </section>
     </article>
 
@@ -178,30 +388,32 @@
             <img src="./img/TOP.png" alt="Ir arriba">
         </a>
     </div>
-    <footer>
-        <img src="./img/titulo.png" alt="Titulo Bojack">
-        <div>
-            <a href="#">
-                <p>Reseñas</p>
-            </a>
-            <a href="#">
-                <p>Galeria</p>
-            </a>
-            <a href="#">
-                <p>Reparto</p>
-            </a>
-            <a href="#">
-                <p>Personajes</p>
-            </a>
-            <a href="#">
-                <p>Curiosidades</p>
-            </a>
-            <a href="#">
-                <p>Temporadas</p>
-            </a>
-            <a href="#">
-                <p>Contanos</p>
-            </a>
-        </div>
-    </footer>
+    <script src="./dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="./gale.js"></script>
 </body>
+<footer>
+    <img src="./img/titulo.png" alt="Titulo Bojack">
+    <div>
+        <a href="./index.html">
+            <p>Inicio</p>
+        </a>
+        <a href="./galeria.html">
+            <p>Galeria</p>
+        </a>
+        <a href="./reparto.html">
+            <p>Reparto</p>
+        </a>
+        <a href="./personajes.html">
+            <p>Personajes</p>
+        </a>
+        <a href="./curio.html">
+            <p>Curiosidades</p>
+        </a>
+        <a href="./temp.html">
+            <p>Temporadas</p>
+        </a>
+        <a href="./contanos.html">
+            <p>Contanos</p>
+        </a>
+    </div>
+</footer>

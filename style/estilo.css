@@ -214,3 +214,41 @@ footer div a p:hover {
     transition: 4s;
     text-decoration: underline;
 }
+
+/*------------------------Apartado-----------------------*/
+.apartado {
+    background-image: url('../img/ana.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.apartado div {
+    background-color: var(--azul);
+    width: 90%;
+    height: 60%;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.apartado div:hover {
+    opacity: 1;
+}
+
+.apartado p {
+    position: absolute;
+    font-size: xx-large;
+    padding: 7%;
+    text-align: center;
+    color: var(--amarillo);
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
