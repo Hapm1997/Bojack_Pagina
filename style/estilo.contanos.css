@@ -86,3 +86,38 @@ article .formulario form button {
     font-style: normal;
 
 }
+
+/* -----------------------------Media query 480----------------------------------- */
+@media only screen and (max-width: 480px) {
+    h2 {
+        font-size: x-large;
+    }
+
+    .fondo {
+        width: 80%;
+        height: 90vh;
+    }
+
+    article .formulario {
+        width: 80%;
+        height: 90vh;
+    }
+
+    article .formulario form {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        height: 90vh;
+    }
+
+    article form label {
+        font-size: medium;
+    }
+
+    textarea {
+        width: 60%;
+    }
+
+    article .formulario form button {
+        font-style: normal;
+    }
+}

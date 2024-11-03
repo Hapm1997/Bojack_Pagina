@@ -35,3 +35,38 @@ article section div:nth-child(2) {
     padding-top: 2%;
     padding-bottom: 2%;
 }
+
+/* -------------------Apartado---------------- */
+.apartado {
+    background-image: url('../img/apartado_lyn.png');
+}
+
+/* -----------------------------Media query 480----------------------------------- */
+@media only screen and (max-width: 480px) {
+    h2 {
+        font-size: x-large;
+    }
+
+    article {
+        flex-direction: column;
+    }
+
+    /* article section:nth-child(1) {
+        background-color: #5072ba;
+    } */
+
+    article section:nth-child(2) {
+        background-color: #5072ba;
+    }
+
+    article section {
+        width: 100%;
+        padding: 0%;
+        padding-bottom: 5%;
+    }
+
+    article section div:nth-child(2) {
+        padding: 0% 3% 3% 3%;
+    }
+
+}

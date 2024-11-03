@@ -60,3 +60,31 @@ article .sel a img:hover {
 article section a img {
     width: 100%;
 }
+
+/* -----------------------------Media query 480----------------------------------- */
+@media only screen and (max-width: 480px) {
+
+    /*-------------------Menu--------------*/
+    article h2 {
+        font-size: x-large;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+
+    article section {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    article .sel a {
+        height: 15vh;
+    }
+
+    article .sel a img:hover {
+        transform: scale(1) rotate(0deg);
+        cursor: n-resize;
+    }
+}

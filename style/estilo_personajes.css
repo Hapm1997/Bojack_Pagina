@@ -91,3 +91,119 @@ article .cuatro .imagen_der {
 article cuatro .imagen_der img {
     transform: scaleX(1);
 }
+
+/* -------------------Apartado---------------- */
+.apartado {
+    background-image: url('../img/ana.jpg');
+}
+
+/* -----------------------------Media query 480----------------------------------- */
+@media only screen and (max-width: 480px) {
+    /* article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    } */
+
+    h2 {
+        width: 80%;
+        font-size: x-large;
+    }
+
+    article .uno {
+        background-color: rgba(160, 100, 64, 0.7);
+        background-image: url('../img/bjSvg.svg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    article .uno .text {
+        color: white;
+    }
+
+    article section {
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        flex-direction: column;
+        padding: 0%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    article .dos {
+        /* background-color: rgba(246, 229, 94, 0.7); */
+        background-color: rgba(236, 165, 231, 0.5);
+        background-image: url('../img/pcSvg.svg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    article .dos .text {
+        color: #62a595;
+    }
+
+    article .tres {
+        /* background-color: rgba(85, 86, 109, 0.7); */
+        background-color: rgba(216, 43, 56, 0.5);
+        background-image: url('../img/toddSvg.svg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    article .tres .text {
+        /* color: #55566d; */
+        color: #f8ccc6;
+    }
+
+    article .cuatro {
+        /* background-color: rgba(176, 225, 251, 0.7); */
+        background-color: rgba(245, 211, 93, 0.3);
+        background-image: url('../img/mrSbg.svg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    article .cuatro .text {
+        color: rgba(107, 107, 102, 1);
+    }
+
+    article .cinco {
+        background-color: rgba(94, 114, 40, 0.7);
+        background-image: url('../img/dianeSvg.svg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    article .cinco .text {
+        color: #05193d;
+    }
+
+    article section .imagen_izq {
+        display: none;
+    }
+
+    article section .text {
+        font-size: large;
+        padding: 5%;
+        font-family: "Delius", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    article section .imagen_der {
+        display: none;
+    }
+}

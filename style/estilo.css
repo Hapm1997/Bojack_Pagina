@@ -155,6 +155,11 @@ header div a:nth-child(2) h1 {
     background-color: var(--amarillo);
 }
 
+#abrir,
+#cerrar {
+    display: none;
+}
+
 /*-------------------Flecha Arriba----------*/
 
 
@@ -217,7 +222,7 @@ footer div a p:hover {
 
 /*------------------------Apartado-----------------------*/
 .apartado {
-    background-image: url('../img/ana.jpg');
+    /* background-image: url('../img/ana.jpg'); */
     background-repeat: no-repeat;
     width: 100%;
     height: 60vh;
@@ -229,26 +234,168 @@ footer div a p:hover {
     background-size: cover;
 }
 
-.apartado div {
+/* .apartado div {
     background-color: var(--azul);
     width: 90%;
-    height: 60%;
+    height: 10%;
     border-radius: 10px;
     transition: 0.4s ease-in-out;
-    opacity: 0;
-}
-
-.apartado div:hover {
     opacity: 1;
-}
+} */
+
+/* .apartado div:hover {
+    opacity: 1;
+} */
 
 .apartado p {
     position: absolute;
     font-size: xx-large;
     padding: 7%;
     text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
     color: var(--amarillo);
     font-family: "Delius", cursive;
     font-weight: 400;
     font-style: normal;
+    border-radius: 15px;
+    background-color: transparent;
+    transition: 0.4s ease-in-out;
+}
+
+.apartado p:hover {
+    background-color: rgba(85, 116, 176, 0.7);
+}
+
+/* -----------------------------Media query 480----------------------------------- */
+@media only screen and (max-width: 480px) {
+    header {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../img/back03.webp');
+        background-size: cover;
+        background-position-x: 60%;
+    }
+
+    /*-------------Logo-------------------------------*/
+    header div {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(80, 114, 186, 0.5);
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    header div a {
+        width: 50%;
+    }
+
+    header div a:nth-child(1) {
+        width: 40%;
+        border-bottom: black solid 2px;
+    }
+
+    header div a:nth-child(2) h1 {
+        color: var(--marron);
+        text-align: center;
+    }
+
+    /* -----------Menu---------------------- */
+    .menu {
+        display: none;
+        height: 100vh;
+        background-color: rgba(80, 114, 186, 0.7);
+        flex-direction: column;
+        position: fixed;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        z-index: 100;
+    }
+
+    .menu a {
+        transition: 3s ease-in-out;
+        width: 100%;
+    }
+
+    .menu a:nth-child(even) {
+        background-color: rgba(80, 114, 186, 0.9);
+    }
+
+    .menu a:nth-child(odd) {
+        background-color: rgba(34, 151, 168, 0.9);
+    }
+
+    .menu a p {
+        padding: 5% 20% 5% 20%;
+        /* text-align: center; */
+        color: white;
+        font-family: "Delius", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: large;
+        transition: 0.4s ease-in-out;
+    }
+
+    .menu a :hover {
+        color: white;
+        background-color: rgba(80, 114, 186, 0.9);
+    }
+
+    #cerrar {
+        width: 8%;
+        position: fixed;
+        top: 1%;
+        left: 90%;
+        z-index: 101;
+    }
+
+    #abrir {
+        z-index: 101;
+        width: 8%;
+        display: block;
+        position: fixed;
+        top: 1%;
+        left: 90%;
+        border: 1px solid rgba(34, 151, 168, 0.9);
+        border-radius: 20%;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*------------------------------------Footer-------------------------------*/
+    footer {
+        height: auto;
+        flex-direction: column;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    footer img {
+        width: 70%;
+        margin-bottom: 5%;
+    }
+
+    /*------------------------------------Flecha Arriba-------------------------------*/
+    div.arriba {
+        display: none;
+    }
+
+    /*------------------------------------Apartado-------------------------------*/
+    .apartado {
+        display: none;
+    }
 }

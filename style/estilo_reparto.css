@@ -64,3 +64,35 @@ article section .cont_txt p {
     font-size: larger;
     color: var(--azul);
 }
+
+/* -------------------Apartado---------------- */
+.apartado {
+    background-image: url('../img/apartado_secre.png');
+}
+
+/* -----------------------------Media query 480----------------------------------- */
+@media only screen and (max-width: 480px) {
+    article h2 {
+        font-size: x-large;
+    }
+
+    article section {
+        width: 100%;
+    }
+
+    article section .cont_img div {
+        height: 30vh;
+    }
+
+    article section .cont_txt {
+        padding: 3%;
+    }
+
+    article section .cont_txt h3 {
+        font-size: x-large;
+    }
+
+    article section .cont_txt p {
+        font-size: medium;
+    }
+}

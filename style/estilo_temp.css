@@ -49,3 +49,24 @@ article section .txt1 {
 
     flex-direction: column;
 }
+
+/* -------------------Apartado---------------- */
+.apartado {
+    background-image: url('../img/apartado_bea.jpg');
+}
+
+/* -----------------------------Media query 480----------------------------------- */
+@media only screen and (max-width: 480px) {
+    article section {
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        font-size: x-large;
+    }
+
+    .sobre:hover {
+        cursor: none;
+        scale: 1;
+    }
+}
