@@ -118,42 +118,55 @@ header div a:nth-child(1) {
 }
 
 header div a:nth-child(2) h1 {
-    color: var(--marron);
+    color: var(--azul);
+    font-size: xx-large;
+    font-family: "Permanent Marker", cursive;
+    font-weight: bolder;
+    text-transform: uppercase;
+    line-height: 90%;
 }
 
 /*-------------Menu-------------------------------*/
 .menu {
-    width: 100%;
-    background-color: var(--azul);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: sticky;
     top: 0;
     z-index: 100;
+    width: 100%;
 }
 
-.menu a {
-    transition: 3s ease-in-out;
-    width: 15%;
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
 }
 
-.menu a p {
-    padding: 5% 20% 5% 20%;
-    text-align: center;
+nav ul li {
+    background: #6a6b66;
+    width: 100%;
+}
+
+nav ul li a {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     color: var(--amarillo);
     font-family: "Delius", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: large;
     transition: 0.4s ease-in-out;
+    background-color: var(--azul);
 }
 
-.menu a :hover {
-    transition: 1s;
+nav ul li a:hover {
     color: var(--azul);
     background-color: var(--amarillo);
 }
+
 
 #abrir,
 #cerrar {
