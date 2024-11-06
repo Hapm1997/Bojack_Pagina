@@ -327,7 +327,7 @@ footer div a p:hover {
 .menu {
     display: none;
     position: fixed;
-    height: 100vh;
+    height: 90vh;
     background-color: rgba(85, 116, 176, 0.9);
 }
 
@@ -337,7 +337,7 @@ nav ul {
 }
 
 nav ul li a {
-    padding: 10%;
+    padding: 5%;
     color: var(--amarillo);
     font-weight: bolder;
     font-size: x-large;
