@@ -6,7 +6,6 @@ article {
     justify-content: center;
     align-items: center;
 }
-
 article section {
     width: 90%;
     display: flex;
@@ -29,7 +28,7 @@ h2 {
     color: var(--marron);
 }
 
-article section div {
+article section a {
     width: 200px;
     overflow: hidden;
     display: flex;

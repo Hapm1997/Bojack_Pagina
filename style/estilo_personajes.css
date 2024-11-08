@@ -128,7 +128,7 @@ article cuatro .imagen_der img {
     }
 
     article .uno {
-        background-color: rgba(160, 100, 64, 0.7);
+        background-color: rgba(160, 100, 64, 0.6);
         background-image: url('../img/bjSvg.svg');
         background-attachment: fixed;
         background-position: center;
@@ -136,9 +136,9 @@ article cuatro .imagen_der img {
         background-size: contain;
     }
 
-    article .uno .text {
+    /* article .uno .text {
         color: white;
-    }
+    } */
 
     article section {
         /* display: flex;
@@ -160,13 +160,13 @@ article cuatro .imagen_der img {
         background-size: contain;
     }
 
-    article .dos .text {
+    /* article .dos .text {
         color: #62a595;
-    }
+    } */
 
     article .tres {
         /* background-color: rgba(85, 86, 109, 0.7); */
-        background-color: rgba(216, 43, 56, 0.5);
+        background-color: rgba(216, 43, 56, 0.8);
         background-image: url('../img/toddSvg.svg');
         background-attachment: fixed;
         background-position: center;
@@ -174,14 +174,14 @@ article cuatro .imagen_der img {
         background-size: contain;
     }
 
-    article .tres .text {
-        /* color: #55566d; */
+    /* article .tres .text {
+         color: #55566d; 
         color: #f8ccc6;
-    }
+    } */
 
     article .cuatro {
-        /* background-color: rgba(176, 225, 251, 0.7); */
-        background-color: rgba(245, 211, 93, 0.3);
+        /* background-color: rgba(176, 225, 251, 0.9); */
+        background-color: rgba(245, 211, 93, 0.4);
         background-image: url('../img/mrSbg.svg');
         background-attachment: fixed;
         background-position: center;
@@ -189,12 +189,12 @@ article cuatro .imagen_der img {
         background-size: contain;
     }
 
-    article .cuatro .text {
+    /* article .cuatro .text {
         color: rgba(107, 107, 102, 1);
-    }
+    } */
 
     article .cinco {
-        background-color: rgba(94, 114, 40, 0.7);
+        background-color: rgba(94, 114, 40, 0.9);
         background-image: url('../img/dianeSvg.svg');
         background-attachment: fixed;
         background-position: center;
@@ -202,9 +202,9 @@ article cuatro .imagen_der img {
         background-size: contain;
     }
 
-    article .cinco .text {
+    /* article .cinco .text {
         color: #05193d;
-    }
+    } */
 
     article section .imagen_izq {
         display: none;
@@ -220,5 +220,13 @@ article cuatro .imagen_der img {
 
     article section .imagen_der {
         display: none;
+    }
+    article section .text p {
+        color: black;
+    }
+    h3 {
+        margin-bottom: 1%;
+        color:black;
+        font-weight: bolder;
     }
 }

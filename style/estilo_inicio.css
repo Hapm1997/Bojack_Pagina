@@ -295,6 +295,13 @@ article section:nth-child(8) .usuarios .usuario div:nth-child(2) {
         width: 50%;
         height: auto;
     }
+    article section:nth-child(2) div .inicio_galeria img {
+        transition: none;
+    }
+    
+    article section:nth-child(2) div img:hover {
+        transform: none;
+    }
 
     /*-------------Section 3 y 4-------------------------------*/
     article section .actores {

@@ -54,7 +54,9 @@ article section div:nth-child(2) {
     h2 {
         font-size: x-large;
     }
-
+    h3{
+    color: black;
+    }
     article {
         flex-direction: column;
     }
@@ -71,10 +73,14 @@ article section div:nth-child(2) {
         width: 100%;
         padding: 0%;
         padding-bottom: 5%;
+        padding-top: 5%;
     }
-
+    article section div:nth-child(1){
+        width: 90%;
+    }
     article section div:nth-child(2) {
-        padding: 0% 3% 3% 3%;
+        padding: 0% 0% 3% 0%;
+        color: black;
+        width: 90%;
     }
-
 }
