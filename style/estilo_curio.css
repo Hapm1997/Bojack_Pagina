@@ -72,10 +72,13 @@ article section div:nth-child(2) {
     }
 
     article section {
+        height: auto;
         width: 100%;
         padding: 0%;
         padding-bottom: 5%;
         padding-top: 5%;
+        align-items: center;
+        justify-content: center;
     }
     article section div:nth-child(1){
         width: 90%;
