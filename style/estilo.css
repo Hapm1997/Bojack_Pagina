@@ -365,7 +365,7 @@ nav ul li a:hover {
         width: 8%;
         position: fixed;
         top: 1%;
-        left: 80%;
+        left: 90%;
         z-index: 101;
     }
 
@@ -375,7 +375,7 @@ nav ul li a:hover {
         display: block;
         position: fixed;
         top: 1%;
-        left: 80%;
+        left: 90%;
         border: 1px solid rgba(34, 151, 168, 0.9);
         border-radius: 20%;
     }
@@ -402,7 +402,13 @@ nav ul li a:hover {
 
     /*------------------------------------Flecha Arriba-------------------------------*/
     div.arriba {
-        display: none;
+        width: 8vw;
+        position: fixed;
+        bottom: 2%;
+        right: 5%;
+        animation-name: arriba;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
     }
 
     /*------------------------------------Apartado-------------------------------*/

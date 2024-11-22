@@ -128,7 +128,7 @@ article section a img {
 
     article .sel a {
         /* width: 20vw; */
-        height: 10vh;
+        height: 20vh;
         display: flex;
         flex-direction: column;
         align-items: center;
